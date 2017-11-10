@@ -41,8 +41,8 @@ declare namespace Validator {
         getDefaultLang (): string
         setAttributeFormatter (func: AttributeFormatter): void
         stopOnError (attributes: boolean | Array<string>): void
-        register (name: string, fn: Function, message: string): void
-        registerAsync (name: string, fn: Function, message: string): void
+        register (name: string, fn: Function, message?: string): void
+        registerAsync (name: string, fn: Function, message?: string): void
     }
 
     interface Validator<A> {
